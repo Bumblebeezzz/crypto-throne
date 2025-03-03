@@ -1,0 +1,10 @@
+import sys
+import os
+
+# Ajouter le chemin de votre application
+path = '/home/Maxlamenace'
+if path not in sys.path:
+    sys.path.append(path)
+
+# Pointer vers votre application Flask
+from app import app as application 
